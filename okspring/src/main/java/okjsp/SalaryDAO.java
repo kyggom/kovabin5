@@ -28,7 +28,7 @@ public class SalaryDAO {
             if (!(payVers[2].equals("0600001"))) {
                 return;
             } else {
-                for (int i = 4; i < payVers.length; i++) {
+                for (int i = 4; i+1 < payVers.length; i++) {
                     list.add(payVers[4]);
                     list.add(payVers[5]);
                     System.out.println(list.toString());
