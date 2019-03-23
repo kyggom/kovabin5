@@ -10,7 +10,7 @@ import java.util.List;
 
 public class SalaryDAO {
 
-    static List<Salary> paylist = new ArrayList<Salary>();
+//    static List<Salary> paylist = new ArrayList<Salary>();
     static List<String> list = new ArrayList<String>();
     static Salary sal = new Salary();
     private static BufferedReader bfr;
@@ -22,10 +22,10 @@ public class SalaryDAO {
                 new File("c:/kova/salary/201903_1"));
         bfr = new BufferedReader(new InputStreamReader(payfile, "euc-kr"));
         String linepay;
-        
+        sal.setGnum("0600001");
         while ((linepay = bfr.readLine()) != null) {
             String[] payVers = linepay.split("\t");
-            if (!(payVers[2].equals("0600001"))) {
+            if (!(payVers[2].equals(sal.getGnum()))) {
                 return;
             } else {
                 for (int i = 5; i < payVers.length; i++) {

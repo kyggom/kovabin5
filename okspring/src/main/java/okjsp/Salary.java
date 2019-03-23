@@ -4,13 +4,13 @@ public class Salary {
 
     private String Year;
     private String Month;
-
-    private String Name;
-    private String Socinum;
     private String Gnum;
+
+/*    private String Name;
+    private String Socinum;
     private String posi;
     private String payments;
-    private Integer Amount;
+    private Integer Amount;*/
     
     public String getYear() {
         return Year;
@@ -33,10 +33,10 @@ public class Salary {
     }
     
     public void setGnum(String gnum) {
-        Gnum = gnum;
+        this.Gnum = gnum;
     }
     
-    public String getName() {
+    /*public String getName() {
         return Name;
     }
 
@@ -76,7 +76,7 @@ public class Salary {
     public void setAmount(Integer amount) {
         Amount = amount;
     }
-
+*/
     public boolean isOK() {
         boolean isOK = (Gnum != null) && Gnum.equals("0600001");
         return isOK;
