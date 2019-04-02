@@ -14,7 +14,7 @@
 <body>
 	<form method="post" action="register.do">
 		id: <input type="text" name="id" value="${user.id}"><br> 
-		pw: <input type="password" name="password"><br>
+		pww: <input type="password" name="password"><br>
 		confirm pw: <input type="password" name="confirmPassword"><br>
 		<input type="submit"	value="register">
 		<br>
